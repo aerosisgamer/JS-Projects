@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.my-logo {
+    margin-left: 15px;
+    width: 4%;
+}
+
+.navigation-bar {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    /* position: fixed; */
+    align-items: center;
+    padding: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.nav-menu {
+    gap: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 130px;
+}
+
+.nav-menu li {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-us {
+    font-size: 18px;
+    padding: 8px;
+    border: 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    margin-left: 400px;
+    transition: 0.3s;
+}
+
+.contact-us:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 5px white;
+}
+
+.article-1 p {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.the-end {
+    margin-top: 20px;
+    background-color: black;
+}
+
+.the-end h1 {
+    text-align: center;
+    color: white;
+    padding: 100px 0px;    
+}
