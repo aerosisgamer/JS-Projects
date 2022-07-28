@@ -5,112 +5,62 @@
 }
 
 html {
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+  background-repeat: no-repeat;
   height: 100%;
 }
 
-body {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-}
-.w-100 {
-  width: 100%;
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.form-inner > h1 {
+.form-heading {
+  font-size: 35px;
+  color: black;
   text-align: center;
-  font-size: 40px;
-  margin-bottom: 40px;
-  color: rgb(37, 37, 37);
-}
-
-#username, #password {
-  height: 35px;
-  font-size: 20px;
-}
-
-
-
-.login-page:before,
-.login-page:after {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  animation: utkarsh 5s linear infinite;
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-}
-.login-page {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.login-page:after {
-  animation-delay: -2.5s;
-  right: 0;
-  top: 300px;
-  z-index: -1;
-}
-.login-page:before {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(255, 209, 67, 1) 0%,
-    rgba(255, 145, 83, 1) 90%
-  );
-}
-
-.login-page:after {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(37, 145, 251, 0.98) 0.1%,
-    rgba(0, 7, 128, 1) 99.8%
-  );
-}
-@keyframes utkarsh {
-  from {
-    transform: rotate(0deg) translateX(100px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(100px) rotate(-360deg);
-  }
-}
-.card {
-  width: 350px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid #fff;
-  border-radius: 10px;
-}
-.card:before {
-  background-color: rgba(255, 255, 255, 0.3);
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
+  margin: 40px 0px 40px 0px;
 }
 
 .form-inner {
-  padding: 30px;
+  width: 280px;
+  color: black;
   line-height: 38px;
+  border-radius: 10px;
+  padding: 0px 30px 0px 30px;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgb(39, 39, 39) ;
 }
 
 a {
   text-decoration: none;
+  font-size: 14px;
 }
 
-#submit {
-  width: 120px;
+.details {
+  height: 35px;
+  width: 100%;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(160, 160, 160);
+}
+
+.last-section {
+  text-align: center;
+  line-height: 50px;
+}
+
+.last-section input {
+  width: 150px;
   height: 40px;
-  font-size: 16px;
-  margin-left: 45%;
-  transform: translate(-45px,0px);
+  padding: 10px;
+  background-color: tomato;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0px 0px 10px red;
 }
