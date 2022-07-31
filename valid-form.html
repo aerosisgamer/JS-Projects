@@ -12,21 +12,23 @@
     />
   </head>
   <body>
-    <div class="form-inner center">
-    <form action="">
+    <div class="form-inner center" onsubmit="return validateForm()">
+    <form action="" >
       <h1 class="form-heading">Login Form</h1>
       <div>
-        <label for="usename">Email or Phone</label>
+        <label for="username">Email or Phone</label>
         <input type="text" name="username" id="username" class="details" />
+        <p id="username-error"></p>
       </div>
             <div class="pass-container">
               <label for="password">Password</label>
               <input type="password" name="pass" id="password" class="details" />
+              <p id="password-error"></p>
             </div>
             <div>
               <a href="#forgot" class="forgot-pass">forgot password ?</a>
               <div class="last-section">
-                <button class="submit-btn">SUBMIT</button>
+                <input type="submit" value="SUBMIT" id="submit-btn">
                 <p>
                   Not a member? <span><a href="register">Signup now</a></span>
                 </p>
