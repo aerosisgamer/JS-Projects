@@ -47,12 +47,17 @@ function validateForm() {
       });
     password.style = "border: 1px solid red;"
     btnMode = 0;
+
   }else if(password.value.length < 8){
     passError.innerHTML = "Password must be atleast 8 characters"
     passError.style = "color: red; font-size: 14px;"
+    btnMode = 0;
+
   }else if(password.value.length > 15){
     passError.innerHTML = "Password must not exceed 15 characters"
     passError.style = "color: red; font-size: 14px;"
+    btnMode = 0;
+    
   }
 
   if (btnMode) {
