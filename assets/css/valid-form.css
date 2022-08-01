@@ -29,14 +29,14 @@ html {
 }
 
 .form-inner {
-  width: 280px;
+  width: 250px;
   color: black;
-  line-height: 38px;
   border-radius: 10px;
   padding: 0px 30px 0px 30px;
   background-color: white;
   box-shadow: 0px 0px 20px rgb(39, 39, 39);
 }
+
 
 a {
   text-decoration: none;
@@ -55,9 +55,35 @@ a {
   box-shadow: 0px 0px 5px rgb(160, 160, 160);
 }
 
+/* username section */
+
+.username-container, .pass-container {
+  line-height: 25px;
+}
+
+/* password section */
+
+#show-pass {
+  margin-top: 10px;
+}
+
+/* password validation  */
+
+.pass-validation ul {
+  margin: 5px 0px 10px 0px;
+}
+
+.pass-validation ul li {
+  list-style-type: none;
+  font-size: 13px;
+  margin-top: 5px;
+  color: red;
+}
+
+/* button section */
+
 .last-section {
   text-align: center;
-  line-height: 50px;
 }
 
 .last-section #submit-btn {
@@ -66,8 +92,19 @@ a {
   padding: 10px;
   background-color: tomato;
   border: none;
+  margin-top: 20px;
   border-radius: 20px;
   color: white;
   box-shadow: 0px 0px 10px red;
   cursor: pointer;
+}
+
+.last-section p {
+  margin: 20px 0px 10px 0px; 
+}
+.labelError{
+  color: red; font-size: 14px;
+}
+.error{
+  border: 1px solid red;
 }

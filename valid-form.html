@@ -12,19 +12,45 @@
     />
   </head>
   <body>
-    <div class="form-inner center" onsubmit="return validateForm()">
-    <form action="" >
+    <div class="form-inner center" >
+    <form action="" onsubmit="return validateForm()">
+
+      <!-- Form Heading  -->
+
       <h1 class="form-heading">Login Form</h1>
-      <div>
-        <label for="username">Email or Phone</label>
-        <input type="text" name="username" id="username" class="details" />
-        <p id="username-error"></p>
+
+      <!-- email-section -->
+
+      <div class="email-container">
+        <label for="email">Email </label>
+        <input type="text" name="email" id="email" class="details" />
+        <p id="email-error"></p>
       </div>
+
+      <!-- password section -->
+
             <div class="pass-container">
               <label for="password">Password</label>
-              <input type="password" name="pass" id="password" class="details" />
+              <input type="password" name="pass" id="password" class="details" onkeyup="validatePass()" />
               <p id="password-error"></p>
+
+              <!-- show password -->
+              <input type="checkbox" name="show" id="show-pass" onclick="showPass()">
+              <label for="show-pass">Show Password</label>
             </div>
+
+
+              <div class="pass-validation">
+                <ul>
+                  <li id="one-num">Atleast one number</li>
+                  <li id="one-sym">Atleast one symbol</li>
+                  <li id="pass-length">Password length must be 6 characters</li>
+                  <li id="capital">Atleast one character must capital</li>
+                </ul>
+              </div>
+
+            <!-- button section -->
+
             <div>
               <a href="#forgot" class="forgot-pass">forgot password ?</a>
               <div class="last-section">
@@ -34,6 +60,7 @@
                 </p>
               </div>
             </div>
+
           </form>
         </div>
     </div>
