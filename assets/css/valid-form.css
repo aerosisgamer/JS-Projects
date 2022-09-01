@@ -43,6 +43,10 @@ a {
   font-size: 14px;
 }
 
+.forgot {
+  margin-top: 5px;
+}
+
 .details {
   height: 35px;
   width: 100%;
@@ -55,7 +59,10 @@ a {
   box-shadow: 0px 0px 5px rgb(160, 160, 160);
 }
 
-/* username section */
+/* Email section */
+.email-container {
+  line-height: 30px;
+}
 
 .username-container, .pass-container {
   line-height: 25px;
@@ -69,8 +76,8 @@ a {
 
 /* password validation  */
 
-.pass-validation ul {
-  margin: 5px 0px 10px 0px;
+.pass-validation {
+  margin: 10px 0px 10px 0px;
 }
 
 .pass-validation ul li {
@@ -92,7 +99,6 @@ a {
   padding: 10px;
   background-color: tomato;
   border: none;
-  margin-top: 20px;
   border-radius: 20px;
   color: white;
   box-shadow: 0px 0px 10px red;
@@ -107,4 +113,50 @@ a {
 }
 .error{
   border: 1px solid red;
+}
+
+.has-error p{
+  color: red; font-size: 14px;
+}
+.has-error input{
+  border: 1px solid red;
+}
+
+/* strength */
+
+.strength-bar {
+  height: 5px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgb(141, 141, 141);
+}
+
+.bar-loading {
+  width: 100%;
+  border-radius: 10px;
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+
+.weak-pass{
+  transform: translate(-70%);
+  height: 100%;
+  background-color: rgb(255, 21, 0);
+}
+
+.strong-pass{
+  transform: translate(-40%);
+  height: 100%;
+  background-color: rgb(244,180,0);
+}
+
+.very-strong-pass{
+  transform: translate(-0%);
+  height: 100%;
+  background-color: rgb(15,157,88);
+}
+
+.strength-display p {
+  text-align: center;
+  margin: 10px 0px 10px 0px;
 }

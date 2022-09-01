@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+.hide{
+    display:none;
+}
+.show{
+    display:block !important;
+}
+
+.main{
+    display: grid;
+    place-content: center;
+}
+.image-slider-container {
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(49, 49, 49);
+    display: flex;
+    position: relative;
+    margin-top: 80px;
+}
+
+.image-slide {
+    display: flex;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.image-slide img{
+    width:100%;
+    border-radius: 20px;
+    animation: my-ani 0.5s linear forwards;
+}
+
+.next,.prev{
+   position:absolute;
+   height:100%; 
+   color:white;
+   cursor: pointer;
+   top:45%;
+   font-size: 50px;
+   
+}
+.next{
+    right:-130px;
+}
+
+.prev{
+    left:-130px;
+}
+@keyframes my-ani {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

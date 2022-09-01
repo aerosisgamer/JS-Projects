@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.smile-emoji {
+    font-size: 200px;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 50%;
+}
+

@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="form-inner center" >
-    <form action="" onsubmit="return validateForm()">
+    <form action="" onsubmit="return validateForm(event)">
 
       <!-- Form Heading  -->
 
@@ -21,7 +21,7 @@
 
       <!-- email-section -->
 
-      <div class="email-container">
+      <div class="email-container ">
         <label for="email">Email </label>
         <input type="text" name="email" id="email" class="details" />
         <p id="email-error"></p>
@@ -31,14 +31,21 @@
 
             <div class="pass-container">
               <label for="password">Password</label>
-              <input type="password" name="pass" id="password" class="details" onkeyup="validatePass()" />
+              <input type="password" name="pass" id="password" class="details" onkeyup="validatePass()" onchange="validatePass()" />
               <p id="password-error"></p>
 
               <!-- show password -->
-              <input type="checkbox" name="show" id="show-pass" onclick="showPass()">
+              <input type="checkbox" name="show" id="show-pass"   >
               <label for="show-pass">Show Password</label>
             </div>
 
+            <!-- forgot password  -->
+
+            <div class="forgot">
+              <a href="#forgot" class="forgot-pass">forgot password ?</a>
+            </div>
+          
+            <!-- conditions  -->
 
               <div class="pass-validation">
                 <ul>
@@ -49,10 +56,20 @@
                 </ul>
               </div>
 
-            <!-- button section -->
+              <!-- password strength  -->
+
+              <div class="strength-section">
+                <div class="strength-bar">
+                  <div class="bar-loading"></div>
+                </div>
+                <div class="strength-display">
+                  <p id="indicator">Weak Password</p>
+                </div>
+              </div>
+
+            <!-- bottom section -->
 
             <div>
-              <a href="#forgot" class="forgot-pass">forgot password ?</a>
               <div class="last-section">
                 <input type="submit" value="SUBMIT" id="submit-btn">
                 <p>
